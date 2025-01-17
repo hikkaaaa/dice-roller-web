@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="dice_roller.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sizer main-text">
+            <h1>Dice<i class="fa-solid fa-dice"></i> Roller</h1>
+            <p>Enter the number of dice to you would like to roll:</p>
+            <input type="number" id = "myInput" value = "1" max = "20" min = "1">
+            <button id = "roll-button" onclick = "rollDice()">Roll Dice</button>
+        </div> 
+        <div class="sizer">
+            <p id = "dice-array-answer"></p>
+        </div>
+        <div class="sizer" id = "dice-image">
+
+        </div>
+    </div>
+    <script src = "dice_roller.js"></script>
+    <script src="https://kit.fontawesome.com/54592158fb.js" crossorigin="anonymous"></script>
+</body>
+</html>
