@@ -9,7 +9,7 @@ function rollDice(){
     for(let i = 1; i <= userInput; i++){
         const randomNumber = Math.floor(Math.random() * 6) + 1; 
         result.push(randomNumber);
-        images.push(`<img src = "./dice-images/side${randomNumber}.jpg" alt = "Dice ${randomNumber}">`);
+        images.push(`<img src = "side${randomNumber}.jpg" alt = "Dice ${randomNumber}">`);
     }
     diceResult.textContent = "dice: " + [...result]; 
     diceImages.innerHTML = images.join('');
